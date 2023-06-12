@@ -5,12 +5,7 @@ const About = () => {
         <div className="flex justify-start items-center lg:items-start flex-col gap-3 max-w-[600px]">
           <h3 className="title uppercase">About Us</h3>
           <p className="text-white text-sm sm:text-base xl:text-lg font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            pariatur cum corrupti consequuntur error eius voluptatibus beatae
-            expedita consectetur sint aut dolorem, nesciunt, est provident ad!
-            Dolore numquam obcaecati perspiciatis doloribus quam voluptas porro
-            quibusdam suscipit natus ipsam consectetur totam veritatis, cum
-            repellat sint. Quisquam mollitia voluptatum atque ratione corrupti.
+            Buna seara si BRAVO VOUA BA!!!
           </p>
         </div>
         <img
