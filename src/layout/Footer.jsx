@@ -10,18 +10,18 @@ const Footer = () => {
         </div>
         <div className="flex justify-start items-start gap-10 sm:gap-16">
           <div className="flex justify-start items-start flex-col gap-2">
-            <h4 className="text-white font-semibold text-lg">Home</h4>
+            <h4 className="text-white font-semibold text-lg">Acasă</h4>
             <a href="#best" className="text-base font-normal text-accent">
-              Best Selling
+              Cele mai bune produse
             </a>
             <a href="#about" className="text-base font-normal text-accent">
-              About Us
+              Despre noi
             </a>
             <a href="#all" className="text-base font-normal text-accent">
-              All Products
+              Toate produsele
             </a>
             <a href="#contact" className="text-base font-normal text-accent">
-              Contact Us
+              Contactează-ne
             </a>
           </div>
         </div>

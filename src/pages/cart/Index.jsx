@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { items } = useSelector((state) => state.cart);
-  const SHIPPING__COST = items.length > 0 ? 5 : 0;
+  const SHIPPING__COST = items.length > 0 ? 10 : 0;
   const [subTotal, setSubTotal] = useState(0);
   useEffect(() => {
     if (items.length > 0) {
@@ -21,7 +21,7 @@ const Cart = () => {
   return (
     <div className="wrapper mt-[140px]">
       <div className="contain justify-start items-center flex-col gap-5">
-        <h2 className="title uppercase">Cart</h2>
+        <h2 className="title uppercase">Coș de cumpărături</h2>
         <div className="w-full max-w-[800px] flex justify-start items-start flex-col  mt-3">
           {items.length > 0 ? (
             items.map((elem, idx) => (
@@ -30,13 +30,13 @@ const Cart = () => {
           ) : (
             <>
               <h4 className="text-white text-2xl text-center w-full font-semibold">
-                Cart is empty
+                Coșul este gol
               </h4>
               <Link
                 to="/"
                 className="text-primary text-base w-full text-center mt-5 font-medium underline"
               >
-                Continue Shopping
+                Continuă cumpărăturile
               </Link>
             </>
           )}
@@ -45,21 +45,21 @@ const Cart = () => {
           <>
             <div className="flex justify-start items-center flex-col p-6 w-full max-w-[600px] rounded-xl bg-gray-400">
               <div className="flex justify-between items-center w-full gap-1 py-4 border-b border-solid border-gray-800">
-                <p className="text-black text-base font-normal">Subtotal</p>
+                <p className="text-black text-base font-normal">Cost produse</p>
                 <h4 className="text-black text-base font-medium">
-                  ${subTotal}
+                  RON {subTotal}
                 </h4>
               </div>
               <div className="flex justify-between items-center w-full gap-1 py-4 border-b border-solid border-gray-800">
-                <p className="text-black text-base font-normal">Shipping</p>
+                <p className="text-black text-base font-normal">Transport</p>
                 <h4 className="text-black text-base font-medium">
-                  ${SHIPPING__COST.toFixed(2)}
+                  RON {SHIPPING__COST.toFixed()}
                 </h4>
               </div>
               <div className="flex justify-between items-center w-full gap-1 py-4 border-b border-solid border-gray-800">
-                <p className="text-black text-base font-normal">Order Total</p>
+                <p className="text-black text-base font-normal">Cost total comandă</p>
                 <h4 className="text-black text-base font-medium">
-                  ${subTotal + SHIPPING__COST}
+                  RON {subTotal + SHIPPING__COST}
                 </h4>
               </div>
             </div>
@@ -67,10 +67,10 @@ const Cart = () => {
               to="/checkout"
               className="text-white bg-primary hover:bg-transparent w-full  max-w-[600px]  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary dark:hover:bg-transparent border-2 border-solid border-primary transition-all duration-300 dark:focus:ring-primary"
             >
-              Checkout
+              Cumpară
             </Link>
             <Link to="/" className="text-primary text-lg font-medium underline">
-              Continue Shopping
+              Continuă cumpărăturile
             </Link>
           </>
         )}
@@ -116,10 +116,10 @@ const CartItem = ({ img, name, quantity, id, price, stock }) => {
           onClick={() => dispatch(removeItem({ id }))}
           className="text-primary font-medium text-lg"
         >
-          Remove
+          Elimină din coș
         </button>
       </div>
-      <p className="text-white text-xl font-semibold ">${price.toFixed(2)}</p>
+      <p className="text-white text-xl font-semibold ">RON {price.toFixed(2)}</p>
     </div>
   );
 };

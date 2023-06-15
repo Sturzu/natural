@@ -40,7 +40,7 @@ const Header = ({ loggedIn }) => {
       <div className="contain justify-between items-center gap-4">
         <div className="flex justify-start items-center gap-10">
           <Link to="/" className="font-black text-accent text-3xl">
-            Natural
+            NATURAL
           </Link>
           <nav
             className={`flex justify-start items-center  sm:items-start lg:items-center gap-6 lg:gap-4 lg:static fixed top-0 transition-all duration-700 ${
@@ -53,7 +53,7 @@ const Header = ({ loggedIn }) => {
               smooth
               className="text-lg lg:text-base font-medium text-primary"
             >
-              Best Selling
+              Cele mai bune produse
             </HashLink>
             <HashLink
               onClick={() => setHeaderToggle(false)}
@@ -61,7 +61,7 @@ const Header = ({ loggedIn }) => {
               smooth
               className="text-lg lg:text-base font-medium text-primary"
             >
-              About Us
+              Despre noi
             </HashLink>
             <HashLink
               onClick={() => setHeaderToggle(false)}
@@ -69,7 +69,7 @@ const Header = ({ loggedIn }) => {
               smooth
               className="text-lg lg:text-base font-medium text-primary"
             >
-              All Products
+              Toate produsele
             </HashLink>
             <HashLink
               onClick={() => setHeaderToggle(false)}
@@ -77,7 +77,7 @@ const Header = ({ loggedIn }) => {
               smooth
               className="text-lg lg:text-base font-medium text-primary"
             >
-              Contact Us
+              Contactează-ne
             </HashLink>
             {loggedIn ? (
               <div className="flex flex-col sm:hidden justify-start items-center gap-2">
@@ -88,7 +88,7 @@ const Header = ({ loggedIn }) => {
                   className="bg-secondary  border-secondary outline outline-1 outline-white text-white px-3 py-1 rounded-md hover:bg-transparent border-2 border-solid transition-all duration-300 text-lg font-medium"
                   onClick={() => signOut(auth)}
                 >
-                  Log out
+                  Deconectare
                 </button>
               </div>
             ) : (
@@ -97,7 +97,7 @@ const Header = ({ loggedIn }) => {
                 to="/login"
                 className="bg-secondary sm:hidden block border-secondary outline outline-1 outline-white text-white px-7 py-1 rounded-md hover:bg-transparent border-2 border-solid transition-all duration-300 text-lg font-medium"
               >
-                Login
+                Conectează-te
               </Link>
             )}
           </nav>
@@ -126,7 +126,7 @@ const Header = ({ loggedIn }) => {
                 className="bg-secondary sm:block hidden border-secondary outline outline-1 outline-white text-white px-3 py-1 rounded-md hover:bg-transparent border-2 border-solid transition-all duration-300 text-lg font-medium"
                 onClick={() => signOut(auth)}
               >
-                Log out
+                Deconectare
               </button>
             </div>
           ) : (
@@ -134,7 +134,7 @@ const Header = ({ loggedIn }) => {
               to="/login"
               className="bg-secondary sm:block hidden border-secondary outline outline-1 outline-white text-white px-7 py-1 rounded-md hover:bg-transparent border-2 border-solid transition-all duration-300 text-lg font-medium"
             >
-              Login
+              Conectează-te
             </Link>
           )}
           <button

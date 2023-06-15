@@ -3,13 +3,17 @@ const About = () => {
     <div id="about" className="wrapper mt-[70px] lg:mt-[150px]">
       <div className="contain lg:flex-row flex-col text-center lg:text-left justify-between items-center gap-10">
         <div className="flex justify-start items-center lg:items-start flex-col gap-3 max-w-[600px]">
-          <h3 className="title uppercase">About Us</h3>
+          <h3 className="title uppercase">Despre noi</h3>
           <p className="text-white text-sm sm:text-base xl:text-lg font-normal">
-            Buna seara si BRAVO VOUA BA!!!
+            Hrănește-ți corpul și sufletul cu alimentele noastre 100% naturale, de o prospețime
+            excepțională, care păstrează intactă aroma autentică a produselor noastre. De la ferma noastră
+            puteți achiziționa o gamă largă de produse, atât de origine animală, cât și de origine vegetală.
+            Noi ne dorim să încurajăm consumul de produse bio și să creăm o comunitate plină de oameni care 
+            vor să susțină fermierii români și un stil de viață sănătos.
           </p>
         </div>
         <img
-          src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+          src="https://images.pexels.com/photos/17238967/pexels-photo-17238967/free-photo-of-ferma.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
           className="w-full max-w-[500px] object-cover rounded-lg"
         />

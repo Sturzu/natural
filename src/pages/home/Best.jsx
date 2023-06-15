@@ -4,24 +4,24 @@ const Best = () => {
   return (
     <div id="best" className="wrapper mt-[50px]">
       <div className="contain justify-start items-center flex-col gap-5">
-        <h3 className="title">BEST SELLING PRODUCTS</h3>
+        <h3 className="title">CELE MAI BUNE PRODUSE</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-3">
           <ProductCard
-            img="https://images.unsplash.com/photo-1628520629937-874c5402aee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            price={599}
-            name="Mango Juice"
+            img="https://images.pexels.com/photos/17239091/pexels-photo-17239091/free-photo-of-cutie-suc-5l.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            price={30}
+            name="Suc de mere 5L"
             id={1}
           />
           <ProductCard
-            img="https://images.unsplash.com/photo-1628520629937-874c5402aee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            price={599}
-            name="Mango Juice"
+            img="https://images.pexels.com/photos/17240481/pexels-photo-17240481/free-photo-of-telemea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            price={25}
+            name="Telemea vacă 1 Kg"
             id={2}
           />
           <ProductCard
-            img="https://images.unsplash.com/photo-1628520629937-874c5402aee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            price={599}
-            name="Mango Juice"
+            img="https://images.pexels.com/photos/10994349/pexels-photo-10994349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            price={10}
+            name="Lapte vacă 2L"
             id={3}
           />
         </div>

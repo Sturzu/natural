@@ -9,7 +9,7 @@ const Hero = () => {
             href="#all"
             className="bg-secondary border-secondary outline outline-1 outline-white text-white px-7 py-1 rounded-md hover:bg-transparent border-2 border-solid uppercase transition-all duration-300 text-lg font-medium grid place-items-center"
           >
-            Products
+            Produse
           </a>
         </div>
       </div>
