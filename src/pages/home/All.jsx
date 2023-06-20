@@ -33,13 +33,13 @@ const All = () => {
           <ProductCard
             img="https://images.pexels.com/photos/17240466/pexels-photo-17240466/free-photo-of-cascaval.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             price={40}
-            name="Cașcaval"
+            name="Cașcaval 1 Kg"
             id={8}
           />
           <ProductCard
             img="https://images.pexels.com/photos/17238923/pexels-photo-17238923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             price={25}
-            name="Brânză-caș din lapte de vacă"
+            name="Brânză-caș din lapte de vacă 1 Kg"
             id={9}
           />{" "}
         </div>

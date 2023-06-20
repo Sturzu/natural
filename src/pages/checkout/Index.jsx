@@ -53,7 +53,7 @@ const Checkout = () => {
           img: elem.img,
         };
       }),
-      total__price__of__order: FINAL__PRICE + 5,
+      total__price__of__order: FINAL__PRICE + 10,
     });
     if (res) {
       toast.success("Comanda dumneavoastră a fost plasată, vă mulțumim!");
